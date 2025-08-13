@@ -3,7 +3,7 @@ import React from "react";
 const projects = [
   {
     title: "Domestic Services Website",
-    desc: "Developed a full-stack solution for connecting users with local service providers .",
+    desc: "Developed a full-stack solution for connecting users with local service providers.",
     img: "/project1.png",
     tech: ["/react.svg", "/MongoDB.svg", "/node.svg", "/Bootstrap.svg"],
     liveDemo: "https://domestic-services-frontend.onrender.com",
@@ -26,22 +26,26 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="projects" className=" mt-40" style={{ scrollMarginTop: "120px" }}>
+    <div
+      id="projects"
+      className="mt-20 md:mt-40"
+      style={{ scrollMarginTop: "120px" }}
+    >
       <div className="flex items-center justify-center mb-8">
         <div className="flex-1 border-t border-gray-400"></div>
         <h2 className="mx-4 text-2xl font-semibold text-center">Projects</h2>
         <div className="flex-1 border-t border-gray-400"></div>
       </div>
 
-      <div className="flex flex-col gap-10 mt-25">
+      <div className="flex flex-col gap-10">
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`flex items-center justify-evenly ${
-              index % 2 !== 0 ? "flex-row-reverse" : ""
-            }`}
+            className={`flex flex-col ${
+              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+            } items-center justify-evenly gap-8`}
           >
-            <div className="flex-shrink-0 w-[350px] h-[250px] bg-gray-200 relative group rounded-lg overflow-hidden">
+            <div className="flex-shrink-0 w-full md:w-[350px] h-[200px] md:h-[250px] bg-gray-200 relative group rounded-lg overflow-hidden">
               <img
                 src={project.img}
                 alt={project.title}
@@ -58,10 +62,7 @@ const Projects = () => {
               </a>
             </div>
 
-            <div
-              className="flex flex-col justify-center "
-              style={{ width: "300px" }}
-            >
+            <div className="flex flex-col justify-center w-full md:w-[300px]">
               <h3 className="text-xl font-semibold py-3 text-center">
                 {project.title}
               </h3>
