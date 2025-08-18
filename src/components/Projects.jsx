@@ -16,11 +16,11 @@ const projects = [
     liveDemo: "https://medi-care-project.vercel.app",
   },
   {
-    title: "Social Media Website",
-    desc: "A real-time social media platform for users to share their experiences.",
+    title: "ECommerce Website",
+    desc: "An e-commerce platform featuring product listings, a shopping cart, and user authentication.",
     img: "/project3.png",
-    tech: ["/react.svg", "/MongoDB.svg", "/node.svg", "/CSS3.svg"],
-    liveDemo: "https://domestic-services-frontend.onrender.com",
+    tech: ["/react.svg", "/MongoDB.svg", "/node.svg", "/tailwind.svg"],
+    liveDemo: "https://e-commerce-amber-five-59.vercel.app",
   },
 ];
 
